@@ -33,19 +33,26 @@ window.addEventListener('DOMContentLoaded', event => {
 
 });
 
-changeVisibility("en", "es");
+
+const es = "[lang=\"es\"]";
+const en = "[lang=\"en\"]";
+changeVisibility(en, es);
 
 document.querySelector("#es").addEventListener("click", ev => {
     ev.preventDefault();
-    changeVisibility("es", "en");
+    changeVisibility(es, en);
 });
 
 document.querySelector("#en").addEventListener("click", ev => {
     ev.preventDefault();
-    changeVisibility("en", "es");
+    changeVisibility(en, es);
+});
+
+document.querySelector("#toggleTheme").addEventListener("change", () => {
+    document.body.classList.toggle("light");
 });
 
 function changeVisibility(show, hide) {
-    document.querySelectorAll(`[lang="${show}"]`).forEach(sh => sh.classList.remove("hide"));
-    document.querySelectorAll(`[lang="${hide}"]`).forEach(hi => hi.classList.add("hide"));
+    document.querySelectorAll(show).forEach(sh => sh.classList.remove("hide"));
+    document.querySelectorAll(hide).forEach(hi => hi.classList.add("hide"));
 }

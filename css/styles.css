@@ -3414,10 +3414,6 @@ textarea.form-control-lg {
   color: var(--bs-secondary);
 }
 
-.lang {
-  padding: 0 0.5rem;
-}
-
 .btn-lg, .btn-group-lg > .btn {
   padding: 0.5rem 1rem;
   font-size: 1.25rem;
@@ -11010,4 +11006,81 @@ section.resume-section .resume-section-content {
 
 .hide {
   display: none !important;
+}
+
+.tools {
+  height: 10vh;
+  width: 100%;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 2rem;
+}
+.tools .change-language {
+  display: flex;
+  gap: 10px;
+}
+.tools .change-language .lang {
+  padding: 0 0.5rem;
+  height: 2rem;
+}
+.toggle-theme-checkbox {
+  opacity: 0;
+  position: absolute;
+}
+.toggle-theme-container {
+  width: 50px;
+  height: 24px;
+  background-color: #111;
+  display: flex;
+  border-radius: 50px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px;
+  position: relative;
+  transform: scale(1.5);
+}
+.ball {
+  width: 22px;
+  height: 20px;
+  background-color: white;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  border-radius: 50%;
+  transition: transform 0.2s linear;
+}
+.dark-icon {
+  color: var(--bs-primary);
+}
+.light-icon {
+  color: var(--bs-light);
+}
+.toggle-theme-checkbox:checked + .toggle-theme-container {
+  background-color: var(--bs-primary);  
+}
+.toggle-theme-checkbox:checked + .toggle-theme-container .ball {
+  transform: translateX(22px);
+  background-color: #111;
+}
+
+body.light {
+  background-color: var(--bs-light);
+  color: var(--bs-dark);
+}
+
+body.light h6, 
+body.light .h6, 
+body.light h5,
+body.light .h5, 
+body.light h4, 
+body.light .h4, 
+body.light h3, 
+body.light .h3,
+body.light h2,
+body.light .h2,
+body.light h1,
+body.light .h1 {
+  color: var(--bs-dark);
 }
