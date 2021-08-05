@@ -10968,8 +10968,13 @@ p.lead {
   background-color: var(--bs-primary);
 }
 
-.dev-icons {
+.dev-icons, .interests-icons {
   font-size: 3rem;
+}
+
+.interests-icons li:hover {
+  color: var(--bs-primary);
+  transition: color 500ms ease-in-out;
 }
 
 section.resume-section {
