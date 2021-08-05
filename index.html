@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
     <meta charset="utf-8" />
     <meta
@@ -41,7 +41,7 @@
           <img
             class="img-fluid img-profile rounded-circle mx-auto mb-2"
             src="assets/img/profile.png"
-            alt="Imagen de"
+            alt="Valentina Varela Rodríguez"
           />
         </span>
       </a>
@@ -59,23 +59,28 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#about">About</a>
+            <a class="nav-link js-scroll-trigger" href="#about" lang="en">About</a>
+            <a class="nav-link js-scroll-trigger" href="#about" lang="es">Sobre mi</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#education"
-              >Education</a
-            >
+            <a class="nav-link js-scroll-trigger" href="#education" lang="en">Education</a>
+            <a class="nav-link js-scroll-trigger" href="#education" lang="es">Educación</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#skills">Skills</a>
+            <a class="nav-link js-scroll-trigger" href="#skills" lang="en">Skills</a>
+            <a class="nav-link js-scroll-trigger" href="#skills" lang="es">Habilidades</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#projects">Projects</a>
+            <a class="nav-link js-scroll-trigger" href="#projects" lang="en">Projects</a>
+            <a class="nav-link js-scroll-trigger" href="#projects" lang="es">Proyectos</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#interests"
-              >Interests</a
-            >
+            <a class="nav-link js-scroll-trigger" href="#interests" lang="en">Interests</a>
+            <a class="nav-link js-scroll-trigger" href="#interests" lang="es">Intereses</a>
+          </li>
+          <li>
+            <button type="button" class="lang btn btn-secondary" id="es">ES</button>
+            <button type="button" class="lang btn btn-secondary" id="en">EN</button>
           </li>
         </ul>
       </div>
@@ -90,14 +95,20 @@
             <span class="text-primary">Varela Rodríguez</span>
           </h1>
           <div class="subheading mb-5">
-            Capital Federal, Bs As · Argentina · (+54) 9 11 2653-7202 ·
+              Capital Federal, Bs As · Argentina · (+54) 9 11 2653-7202 ·
             <a href="mailto:vavarela.rodriguez@gmail.com">vavarela.rodriguez@gmail.com</a>
           </div>
-          <p class="lead mb-5">
+          <p class="lead mb-5" lang="en">
             I love learning new things and testing myself with new challenges.
             Another thing that I'm passionate about is teaching, I believe 
             there's a sort of magic in sharing one's experience and knowledge with others.
             I'd be glad to work with people who feel the same way.
+          </p>
+          <p class="lead mb-5" lang="es">
+            Me encanta aprender cosas nuevas y ponerme a prueba con nuevos desafíos.
+            Otra cosa que me apasiona es enseñar, creo que hay cierta magia en compartir
+            la experiencia y conocimientos con otres.
+            Me encantaría trabajar con gente que sintiera lo mismo.
           </p>
           <div class="social-icons">
             <a
@@ -117,7 +128,8 @@
       <!-- Education-->
       <section class="resume-section" id="education">
         <div class="resume-section-content">
-          <h2 class="mb-5">Education</h2>
+          <h2 class="mb-5" lang="en">Education</h2>
+          <h2 class="mb-5" lang="es">Educacion</h2>
           <div
             class="d-flex flex-column flex-md-row justify-content-between mb-5"
           >
@@ -126,29 +138,38 @@
               <div class="subheading mb-3">Certified Tech Developer</div>
             </div>
             <div class="flex-shrink-0">
-              <span class="text-primary">March 2021 - Present</span>
+              <span class="text-primary" lang="en">March 2021 - Present</span>
+              <span class="text-primary" lang="es">Marzo 2021 - Presente</span>
             </div>
           </div>
           <div
             class="d-flex flex-column flex-md-row justify-content-between mb-5"
           >
             <div class="flex-grow-1">
-              <h3 class="mb-0">University of Buenos Aires</h3>
-              <div class="subheading mb-3">
+              <h3 class="mb-0" lang="en">University of Buenos Aires</h3>
+              <h3 class="mb-0" lang="es">Facultad de Ingeniería de la UBA</h3>
+              <div class="subheading mb-3" lang="en">
                 Bachelor of Science in System Analysis
+              </div>
+              <div class="subheading mb-3" lang="es">
+                Licenciatura en Análisis de Sistemas
               </div>
             </div>
             <div class="flex-shrink-0">
-              <span class="text-primary">August 2019 - Present</span>
+              <span class="text-primary" lang="en">August 2019 - Present</span>
+              <span class="text-primary" lang="es">Agosto 2019 - Presente</span>
             </div>
           </div>
           <div class="d-flex flex-column flex-md-row justify-content-between">
             <div class="flex-grow-1">
-              <h3 class="mb-0">ORT Technical School</h3>
-              <div class="subheading mb-3">Orientation in Electronics</div>
+              <h3 class="mb-0" lang="en">ORT Technical School</h3>
+              <h3 class="mb-0" lang="es">Escuela Técnica ORT</h3>
+              <div class="subheading mb-3" lang="en">Orientation in Electronics</div>
+              <div class="subheading mb-3" lang="es">Bachiller técnico con orientación en electrónica</div>
             </div>
             <div class="flex-shrink-0">
-              <span class="text-primary">March 2013 - November 2017</span>
+              <span class="text-primary" lang="en">March 2013 - November 2017</span>
+              <span class="text-primary" lang="es">Marzo 2013 - Noviembre 2017</span>
             </div>
           </div>
         </div>
@@ -157,8 +178,10 @@
       <!-- Skills-->
       <section class="resume-section" id="skills">
         <div class="resume-section-content">
-          <h2 class="mb-5">Skills</h2>
-          <div class="subheading mb-3">Programming Languages & Tools</div>
+          <h2 class="mb-5" lang="en">Skills</h2>
+          <h2 class="mb-5" lang="es">Habilidades</h2>
+          <div class="subheading mb-3" lang="en">Programming Languages & Tools</div>
+          <div class="subheading mb-3" lang="es">Lenguajes de programación y herramientas</div>
           <ul class="list-inline dev-icons">
             <li class="list-inline-item"><i class="fab fa-html5"></i></li>
             <li class="list-inline-item"><i class="fab fa-css3-alt"></i></li>
@@ -169,19 +192,23 @@
             <li class="list-inline-item"><i class="fab fa-github"></i></li>
             <li class="list-inline-item"><i class="fab fa-java"></i></li>
           </ul>
-          <div class="subheading mb-3">Workflow</div>
+          <div class="subheading mb-3" lang="en">Workflow</div>
+          <div class="subheading mb-3" lang="es">Forma de trabajo</div>
           <ul class="fa-ul mb-0">
             <li>
               <span class="fa-li"><i class="fas fa-check"></i></span>
-              Mobile-First, Responsive Design
+              <p lang="en">Mobile-First, Responsive Design</p>
+              <p lang="es">Mobile-First, Diseño responsive</p>
             </li>
             <li>
               <span class="fa-li"><i class="fas fa-check"></i></span>
-              Testing & Debugging
+              <p lang="en">Testing & Debugging</p>
+              <p lang="es">Testing y Debugging</p>
             </li>
             <li>
               <span class="fa-li"><i class="fas fa-check"></i></span>
-              Agile Development & Scrum
+              <p lang="en">Agile Development & Scrum</p>
+              <p lang="es">Desarrollo ágil y Scrum</p>
             </li>
           </ul>
         </div>
@@ -190,7 +217,8 @@
       <!-- Projects-->
       <section class="resume-section" id="projects">
         <div class="resume-section-content">
-          <h2 class="mb-5">Projects</h2>
+          <h2 class="mb-5" lang="en">Projects</h2>
+          <h2 class="mb-5" lang="es">Proyectos</h2>
           <div id="terminalPortfolio">
               <h3 class="mb-3 mt-sm-5">
                 <a
@@ -224,9 +252,13 @@
                       alt=""
                     />
                     <div class="carousel-caption d-none d-md-block">
-                      <p>
+                      <p lang="en">
                         Imitates a command line interface
                         to show my personal information and projects
+                      </p>
+                      <p lang="es">
+                        Imita el comportamiento de una interfaz de línea de comandos
+                        para mostrar mi información personal y proyectos
                       </p>
                     </div>
                   </div>
@@ -237,7 +269,8 @@
                       alt=""
                     />
                     <div class="carousel-caption d-none d-md-block">
-                      <p>Available commands</p>
+                      <p lang="en">Available commands</p>
+                      <p lang="es">Comandos disponibles</p>
                     </div>
                   </div>
                 </div>
@@ -251,7 +284,7 @@
                     class="carousel-control-prev-icon"
                     aria-hidden="true"
                   ></span>
-                  <span class="visually-hidden">Previous</span>
+                  <span class="visually-hidden" lang="en">Previous</span>
                 </button>
                 <button
                   class="carousel-control-next"
@@ -263,7 +296,7 @@
                     class="carousel-control-next-icon"
                     aria-hidden="true"
                   ></span>
-                  <span class="visually-hidden">Next</span>
+                  <span class="visually-hidden" lang="en">Next</span>
                 </button>
               </div>
           </div>
@@ -360,7 +393,7 @@
                     class="carousel-control-prev-icon"
                     aria-hidden="true"
                 ></span>
-                <span class="visually-hidden">Previous</span>
+                <span class="visually-hidden" lang="en">Previous</span>
                 </button>
                 <button
                 class="carousel-control-next"
@@ -372,7 +405,7 @@
                     class="carousel-control-next-icon"
                     aria-hidden="true"
                 ></span>
-                <span class="visually-hidden">Next</span>
+                <span class="visually-hidden" lang="en">Next</span>
                 </button>
             </div>
           </div>
@@ -438,7 +471,7 @@
                   data-bs-slide="prev"
                 >
                   <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
+                  <span class="visually-hidden" lang="en">Previous</span>
                 </button>
                 <button
                   class="carousel-control-next"
@@ -447,7 +480,7 @@
                   data-bs-slide="next"
                 >
                   <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
+                  <span class="visually-hidden" lang="en">Next</span>
                 </button>
               </div>
           </div>
@@ -460,8 +493,11 @@
                   >CodeThinkers</a
                 >
               </h3>
-              <p>
+              <p lang="en">
                   The purpose of this project is showing the skills and tools I adquired in the Design Thiking course
+              </p>
+              <p lang="es">
+                  El objetivo de este proyeto es mostrar las habilidades y herramientas que adquirí en el taller de Design Thinking
               </p>
               <div id="carouselCodeThinkers" class="carousel slide" data-interval="5000" >
                 <div class="carousel-indicators">
@@ -532,7 +568,7 @@
                     class="carousel-control-prev-icon"
                     aria-hidden="true"
                   ></span>
-                  <span class="visually-hidden">Previous</span>
+                  <span class="visually-hidden" lang="en">Previous</span>
                 </button>
                 <button
                   class="carousel-control-next"
@@ -544,7 +580,7 @@
                     class="carousel-control-next-icon"
                     aria-hidden="true"
                   ></span>
-                  <span class="visually-hidden">Next</span>
+                  <span class="visually-hidden" lang="en">Next</span>
                 </button>
               </div>
           </div>
@@ -620,7 +656,7 @@
                     class="carousel-control-prev-icon"
                     aria-hidden="true"
                   ></span>
-                  <span class="visually-hidden">Previous</span>
+                  <span class="visually-hidden" lang="en">Previous</span>
                 </button>
                 <button
                   class="carousel-control-next"
@@ -632,7 +668,7 @@
                     class="carousel-control-next-icon"
                     aria-hidden="true"
                   ></span>
-                  <span class="visually-hidden">Next</span>
+                  <span class="visually-hidden" lang="en">Next</span>
                 </button>
               </div>
           </div>
@@ -642,7 +678,8 @@
       <!-- Interests-->
       <section class="resume-section" id="interests">
         <div class="resume-section-content">
-          <h2 class="mb-5">Interests</h2>
+          <h2 class="mb-5" lang="en">Interests</h2>
+          <h2 class="mb-5" lang="es">Interese</h2>
           <ul class="list-inline interests-icons">
             <li class="list-inline-item"><i class="fas fa-biking"></i></li>
             <li class="list-inline-item"><i class="fas fa-skiing"></i></li>
@@ -651,14 +688,23 @@
             <li class="list-inline-item"><i class="fas fa-gamepad"></i></li>
             <li class="list-inline-item"><i class="fas fa-cat"></i></li>
           </ul>
-          <p>
+          <p lang="en">
             Besides programming, I spend a large amount of my free time creating objects 
             with clay. In fact I take pottery lessons once a week! I also enjoy reading, 
             watching movies (I'm a huge Harry Potter fan) and playing videogames.  
           </p>
-          <p class="mb-0">
+          <p lang="es">
+            Además de programar, paso gran parte de mi tiempo libre creando cositas con arcilla.
+            De hecho tomo clases de alfarería y cerámica una vez a la semana. Tambien disfruto
+            leer, ver películas (potterhead a morir) y jugar en la PC.  
+          </p>
+          <p lang="en" class="mb-0">
             When it comes to outdoor activities I prefer cycling to walking. 
             If colder weathers, I like to travel to places where it snows and ski.
+          </p>
+          <p lang="es" class="mb-0">
+            En lo referido a actividades al aire libre prefiero, por ejemplo, andar en bicicleta 
+            antes que caminar. En invierno disfruto viajar a lugares donde nieve para poder esquiar.
           </p>
         </div>
       </section>
